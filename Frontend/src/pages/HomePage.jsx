@@ -30,9 +30,9 @@ function Homepage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-100 to-blue-200 p-6 text-black relative">
-      <div className="w-[1700px] mx-auto">
-        <img src="/PokeBrawlLogo.png" alt="" className="mx-auto w-70 drop-shadow-xl mb-5" />
+    <div className="min-h-screen  p-6 text-black relative">
+      <div className="w-full max-w-5xl mx-auto">
+        <img src="/PokeBrawlLogo.png" alt="" className="mx-auto w-3/4 sm:w-1/2 md:w-1/3 drop-shadow-xl mb-6" />
 
         <div className="flex ">
           <div className="mx-auto space-x-8">
@@ -63,7 +63,9 @@ function Homepage() {
           </div>
         </div>
 
-        <Game />
+        <div className="w-full">
+          <Game />
+        </div>
       </div>
     </div>
   );
